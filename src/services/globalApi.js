@@ -23,6 +23,18 @@ export const loginApi = async (email, password) => {
   return data;
 };
 
+export const logoutApi = async () => {
+  const data = await axios.get(`${API_URL}/api/auth/logout`);
+
+  return data;
+};
+
+export const userApi = async () => {
+  const data = await axios.get(`${API_URL}/api/user/user`);
+
+  return data;
+};
+
 // // Fetch word meaning from https://dictionaryapi.dev/
 // export const getWord = async (word) => {
 //   const data = await axios.get(

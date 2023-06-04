@@ -1,6 +1,6 @@
 "use client"; // to use useState and other hooks
 import { createContext, useState } from "react";
-import { loginApi } from "./globalApi";
+import { loginApi, logoutApi } from "./globalApi";
 
 export const GlobalContext = createContext();
 
@@ -29,8 +29,27 @@ export const GlobalContextProvider = ({ children }) => {
     }
   };
 
+  const logout = async () => {
+    try {
+      setLoading(true);
+      const data = await logoutApi();
+
+      console.log(data);
+      console.log("Logged out");
+
+      setIsLoggedIn(false);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setIsLoggedIn(true);
+      setLoading(false);
+    }
+  };
+
   return (
-    <GlobalContext.Provider value={{ loading, login, isLoggedIn, loginError }}>
+    <GlobalContext.Provider
+      value={{ loading, login, isLoggedIn, loginError, logout }}
+    >
       {children}
     </GlobalContext.Provider>
   );
