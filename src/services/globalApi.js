@@ -29,8 +29,11 @@ export const logoutApi = async () => {
   return data;
 };
 
-export const userApi = async () => {
-  const data = await axios.get(`${API_URL}/api/user/user`);
+export const userApi = async (token) => {
+  const data = await axios.get(`${API_URL}/api/user/user`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  console.log(data);
 
   return data;
 };

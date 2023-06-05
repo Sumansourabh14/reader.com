@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useContext } from "react";
 
 const Header = () => {
-  const { isLoggedIn, logout } = useContext(GlobalContext);
+  const { isAuthenticated, logout } = useContext(GlobalContext);
 
-  console.log(isLoggedIn);
+  console.log({ isAuthenticated });
 
   const handleLogout = () => {
     logout();
@@ -21,7 +21,7 @@ const Header = () => {
           <Stack direction="row" alignItems="center" spacing={2}>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
-            {isLoggedIn ? (
+            {isAuthenticated ? (
               <Button variant="contained" onClick={handleLogout}>
                 Logout
               </Button>

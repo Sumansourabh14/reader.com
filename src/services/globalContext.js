@@ -1,13 +1,20 @@
 "use client"; // to use useState and other hooks
-import { createContext, useState } from "react";
-import { loginApi, logoutApi } from "./globalApi";
+import { createContext, useEffect, useState } from "react";
+import { loginApi, logoutApi, userApi } from "./globalApi";
+import { useRouter } from "next/navigation";
 
 export const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loginError, setLoginError] = useState(false);
+  const [user, setUser] = useState(null);
+  const [token, setToken] = useState(null);
+
+  console.log({ token });
+
+  const router = useRouter();
 
   const login = async (email, password) => {
     setLoginError(null);
@@ -19,8 +26,10 @@ export const GlobalContextProvider = ({ children }) => {
       console.log(data);
       console.log("Logged in");
 
-      setIsLoggedIn(true);
+      setIsAuthenticated(true);
+      setToken(data.data.accessToken);
       setLoading(false);
+      router.push("/profile");
     } catch (error) {
       console.log(error);
 
@@ -37,18 +46,35 @@ export const GlobalContextProvider = ({ children }) => {
       console.log(data);
       console.log("Logged out");
 
-      setIsLoggedIn(false);
+      setIsAuthenticated(false);
       setLoading(false);
     } catch (error) {
       console.log(error);
-      setIsLoggedIn(true);
+      setIsAuthenticated(true);
       setLoading(false);
     }
   };
 
+  const getUser = async () => {
+    try {
+      const data = await userApi(token);
+      setUser(data.data.user);
+      console.log(data.data.user);
+      setIsAuthenticated(true);
+    } catch (error) {
+      console.log(error);
+      setUser(null);
+      setIsAuthenticated(false);
+    }
+  };
+
+  useEffect(() => {
+    getUser();
+  }, [token]);
+
   return (
     <GlobalContext.Provider
-      value={{ loading, login, isLoggedIn, loginError, logout }}
+      value={{ loading, login, isAuthenticated, loginError, logout, user }}
     >
       {children}
     </GlobalContext.Provider>
