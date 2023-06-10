@@ -1,7 +1,7 @@
 "use client"; // to use useState and other hooks
+import { useRouter } from "next/navigation";
 import { createContext, useEffect, useState } from "react";
 import { loginApi, logoutApi, userApi } from "./globalApi";
-import { useRouter } from "next/navigation";
 
 export const GlobalContext = createContext();
 
@@ -11,8 +11,6 @@ export const GlobalContextProvider = ({ children }) => {
   const [loginError, setLoginError] = useState(false);
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(null);
-
-  console.log({ token });
 
   const router = useRouter();
 
@@ -27,7 +25,8 @@ export const GlobalContextProvider = ({ children }) => {
       console.log("Logged in");
 
       setIsAuthenticated(true);
-      setToken(data.data.accessToken);
+      // setToken(data.data.accessToken);
+      setToken(getCookie("token"));
       setLoading(false);
       router.push("/profile");
     } catch (error) {
@@ -58,8 +57,8 @@ export const GlobalContextProvider = ({ children }) => {
   const getUser = async () => {
     try {
       const data = await userApi(token);
-      setUser(data.data.user);
       console.log(data.data.user);
+      setUser(data.data.user);
       setIsAuthenticated(true);
     } catch (error) {
       console.log(error);
@@ -68,9 +67,28 @@ export const GlobalContextProvider = ({ children }) => {
     }
   };
 
+  const getCookie = (name) => {
+    const cookieString = document.cookie;
+    const cookies = cookieString.split(";");
+    console.log(cookieString, cookies);
+
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.startsWith(name + "=")) {
+        return cookie.substring(name.length + 1);
+      }
+    }
+
+    return null;
+  };
+
   useEffect(() => {
     getUser();
-  }, [token]);
+  }, []);
+
+  useEffect(() => {
+    console.log({ token, user });
+  }, [token, user]);
 
   return (
     <GlobalContext.Provider

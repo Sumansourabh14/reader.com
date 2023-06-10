@@ -15,24 +15,34 @@ export const signUpApi = async (username, email, password) => {
 };
 
 export const loginApi = async (email, password) => {
-  const data = await axios.post(`${API_URL}/api/auth/login`, {
-    email,
-    password,
-  });
+  const data = await axios.post(
+    `${API_URL}/api/auth/login`,
+    {
+      email,
+      password,
+    },
+    { withCredentials: true }
+  );
 
   return data;
 };
 
 export const logoutApi = async () => {
-  const data = await axios.get(`${API_URL}/api/auth/logout`);
+  const data = await axios.get(`${API_URL}/api/auth/logout`, {
+    withCredentials: true,
+  });
 
   return data;
 };
 
 export const userApi = async (token) => {
-  const data = await axios.get(`${API_URL}/api/user/user`, {
-    headers: { Authorization: `Bearer ${token}` },
-  });
+  const data = await axios.get(
+    `${API_URL}/api/user/user`,
+    {
+      headers: { Authorization: `Bearer ${token}` },
+    },
+    { withCredentials: true }
+  );
   console.log(data);
 
   return data;
