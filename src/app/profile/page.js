@@ -1,19 +1,13 @@
 "use client";
 import { GlobalContext } from "@/services/globalContext";
-import { useRouter } from "next/navigation";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 const Profile = () => {
-  const { user, isAuthenticated } = useContext(GlobalContext);
-  const router = useRouter();
-
-  if (!isAuthenticated) {
-    router.push("/login");
-  }
+  const { user } = useContext(GlobalContext);
 
   return (
     <div>
-      <h1>Hi, {user?.username}!</h1>
+      <h1>Hi, {user?.name}!</h1>
     </div>
   );
 };

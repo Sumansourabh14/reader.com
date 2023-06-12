@@ -4,8 +4,9 @@ import { API_URL } from "../utils/config";
 // Consider
 // https://api.hamatim.com/quote (For book quotes)
 
-export const signUpApi = async (username, email, password) => {
+export const signUpApi = async (name, username, email, password) => {
   const data = await axios.post(`${API_URL}/api/user/sign-up`, {
+    name,
     username,
     email,
     password,

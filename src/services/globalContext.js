@@ -1,7 +1,7 @@
 "use client"; // to use useState and other hooks
 import { useRouter } from "next/navigation";
 import { createContext, useEffect, useState } from "react";
-import { loginApi, logoutApi, userApi } from "./globalApi";
+import { loginApi, logoutApi, signUpApi, userApi } from "./globalApi";
 
 export const GlobalContext = createContext();
 
@@ -12,6 +12,23 @@ export const GlobalContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const router = useRouter();
+
+  const signUp = async (name, username, email, password) => {
+    try {
+      setLoading(true);
+      const data = await signUpApi(name, username, email, password);
+
+      console.log(data);
+      console.log("Signed up");
+
+      setLoading(false);
+      router.push("/login");
+    } catch (error) {
+      console.log(error);
+
+      setLoading(false);
+    }
+  };
 
   const login = async (email, password) => {
     setLoginError(null);
@@ -75,7 +92,15 @@ export const GlobalContextProvider = ({ children }) => {
 
   return (
     <GlobalContext.Provider
-      value={{ loading, login, isAuthenticated, loginError, logout, user }}
+      value={{
+        loading,
+        login,
+        isAuthenticated,
+        loginError,
+        logout,
+        signUp,
+        user,
+      }}
     >
       {children}
     </GlobalContext.Provider>

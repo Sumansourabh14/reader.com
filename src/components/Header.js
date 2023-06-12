@@ -22,9 +22,12 @@ const Header = () => {
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             {isAuthenticated ? (
-              <Button variant="contained" onClick={handleLogout}>
-                Logout
-              </Button>
+              <>
+                <Link href="/profile">Profile</Link>
+                <Button variant="contained" onClick={handleLogout}>
+                  Logout
+                </Button>
+              </>
             ) : (
               <>
                 <Link href="/login">Login</Link>
