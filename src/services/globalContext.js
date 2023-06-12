@@ -10,7 +10,6 @@ export const GlobalContextProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loginError, setLoginError] = useState(false);
   const [user, setUser] = useState(null);
-  const [token, setToken] = useState(null);
 
   const router = useRouter();
 
@@ -25,8 +24,6 @@ export const GlobalContextProvider = ({ children }) => {
       console.log("Logged in");
 
       setIsAuthenticated(true);
-      // setToken(data.data.accessToken);
-      setToken(getCookie("token"));
       setLoading(false);
       router.push("/profile");
     } catch (error) {
@@ -47,6 +44,7 @@ export const GlobalContextProvider = ({ children }) => {
 
       setIsAuthenticated(false);
       setLoading(false);
+      router.push("/login");
     } catch (error) {
       console.log(error);
       setIsAuthenticated(true);
@@ -56,7 +54,7 @@ export const GlobalContextProvider = ({ children }) => {
 
   const getUser = async () => {
     try {
-      const data = await userApi(token);
+      const data = await userApi();
       console.log(data.data.user);
       setUser(data.data.user);
       setIsAuthenticated(true);
@@ -67,28 +65,13 @@ export const GlobalContextProvider = ({ children }) => {
     }
   };
 
-  const getCookie = (name) => {
-    const cookieString = document.cookie;
-    const cookies = cookieString.split(";");
-    console.log(cookieString, cookies);
-
-    for (let i = 0; i < cookies.length; i++) {
-      const cookie = cookies[i].trim();
-      if (cookie.startsWith(name + "=")) {
-        return cookie.substring(name.length + 1);
-      }
-    }
-
-    return null;
-  };
-
   useEffect(() => {
     getUser();
   }, []);
 
   useEffect(() => {
-    console.log({ token, user });
-  }, [token, user]);
+    console.log({ user });
+  }, [user]);
 
   return (
     <GlobalContext.Provider
