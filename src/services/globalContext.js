@@ -42,6 +42,7 @@ export const GlobalContextProvider = ({ children }) => {
 
       setIsAuthenticated(true);
       setLoading(false);
+
       router.push("/profile");
     } catch (error) {
       console.log(error);

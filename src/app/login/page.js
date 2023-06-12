@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import TextInput from "../../components/formComponents/TextInput";
 import { GlobalContext } from "@/services/globalContext";
 import LoadingButton from "@/components/pageComponents/LoadingButton";
+import Link from "next/link";
 
 export const metadata = {
   title: "Login",
@@ -24,6 +25,7 @@ const Login = () => {
 
   return (
     <div>
+      <h1>Login</h1>
       {loginError && <h4>{loginError}</h4>}
 
       <form onSubmit={submitHandler}>
@@ -49,6 +51,9 @@ const Login = () => {
             </div>
           )}
         </Button>
+        <p>
+          Don&apos;t have an account? <Link href="/sign-up">Sign up</Link>
+        </p>
       </form>
     </div>
   );

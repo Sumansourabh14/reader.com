@@ -2,7 +2,8 @@
 import TextInput from "@/components/formComponents/TextInput";
 import LoadingButton from "@/components/pageComponents/LoadingButton";
 import { GlobalContext } from "@/services/globalContext";
-import { Button } from "@mui/material";
+import { Button, Stack } from "@mui/material";
+import Link from "next/link";
 import React, { useContext, useState } from "react";
 
 export const metadata = {
@@ -16,28 +17,27 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [password2, setPassword2] = useState("");
 
   const handleSignUp = (e) => {
     e.preventDefault();
 
-    if (password === password2) {
-      signUp(name, username, email, password);
-    } else {
-      console.log("Error: Password doesn't match!");
-    }
+    signUp(name, username, email, password);
   };
 
   return (
     <div>
+      <h1>Sign Up</h1>
       <form onSubmit={handleSignUp}>
-        <TextInput
-          type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required={true}
-        />
+        <div>
+          <TextInput
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required={true}
+          />
+          <p>This will appear on your profile.</p>
+        </div>
         <TextInput
           type="text"
           placeholder="Username"
@@ -54,16 +54,9 @@ const SignUp = () => {
         />
         <TextInput
           type="password"
-          placeholder="Create a password"
+          placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          required={true}
-        />
-        <TextInput
-          type="password"
-          placeholder="Re-enter password"
-          value={password2}
-          onChange={(e) => setPassword2(e.target.value)}
           required={true}
         />
         <Button variant="contained" type="submit">
@@ -74,6 +67,9 @@ const SignUp = () => {
             </div>
           )}
         </Button>
+        <p>
+          Already have an account? <Link href="/login">Login</Link>
+        </p>
       </form>
     </div>
   );
