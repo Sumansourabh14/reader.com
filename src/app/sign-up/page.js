@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const SignUp = () => {
-  const { loading, signUp } = useContext(GlobalContext);
+  const { loading, signUp, signUpError } = useContext(GlobalContext);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,6 +27,7 @@ const SignUp = () => {
   return (
     <div>
       <h1>Sign Up</h1>
+
       <form onSubmit={handleSignUp}>
         <div>
           <TextInput
@@ -52,6 +53,7 @@ const SignUp = () => {
           onChange={(e) => setEmail(e.target.value)}
           required={true}
         />
+        {signUpError && <p>{signUpError}</p>}
         <TextInput
           type="password"
           placeholder="Password"

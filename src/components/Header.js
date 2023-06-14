@@ -31,7 +31,16 @@ const Header = () => {
             ) : (
               <>
                 <Link href="/login">Login</Link>
-                <Link href="/sign-up">Sign Up</Link>
+                <Link
+                  href="/sign-up"
+                  style={{
+                    padding: "0.8rem 1rem",
+                    backgroundColor: "#1db954",
+                    borderRadius: "0.2rem",
+                  }}
+                >
+                  Sign Up
+                </Link>
               </>
             )}
           </Stack>

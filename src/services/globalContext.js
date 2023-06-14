@@ -9,11 +9,14 @@ export const GlobalContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loginError, setLoginError] = useState(false);
+  const [signUpError, setSignUpError] = useState(null);
   const [user, setUser] = useState(null);
 
   const router = useRouter();
 
   const signUp = async (name, username, email, password) => {
+    setSignUpError(null);
+
     try {
       setLoading(true);
       const data = await signUpApi(name, username, email, password);
@@ -25,6 +28,10 @@ export const GlobalContextProvider = ({ children }) => {
       router.push("/login");
     } catch (error) {
       console.log(error);
+
+      if (error.response.status === 400) {
+        setSignUpError("Another user is already registered with this email");
+      }
 
       setLoading(false);
     }
@@ -100,6 +107,7 @@ export const GlobalContextProvider = ({ children }) => {
         loginError,
         logout,
         signUp,
+        signUpError,
         user,
       }}
     >
