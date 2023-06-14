@@ -1,10 +1,11 @@
 "use client";
+import ErrorText from "@/components/errorComponents/ErrorText";
 import TextInput from "@/components/formComponents/TextInput";
 import LoadingButton from "@/components/pageComponents/LoadingButton";
 import { GlobalContext } from "@/services/globalContext";
-import { Button, Stack } from "@mui/material";
+import { Button } from "@mui/material";
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 
 export const metadata = {
   title: "Sign Up",
@@ -53,7 +54,7 @@ const SignUp = () => {
           onChange={(e) => setEmail(e.target.value)}
           required={true}
         />
-        {signUpError && <p>{signUpError}</p>}
+        {signUpError && <ErrorText message={signUpError} />}
         <TextInput
           type="password"
           placeholder="Password"
