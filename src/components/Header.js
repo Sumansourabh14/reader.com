@@ -18,7 +18,7 @@ const Header = () => {
       <AppBar position="fixed" className="app-bar-backdrop">
         <Toolbar>
           <h2 style={{ flexGrow: 1, color: "#000" }}>Reader.com</h2>
-          <Stack direction="row" alignItems="center" spacing={2}>
+          <Stack direction="row" alignItems="center" spacing={3}>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             {isAuthenticated ? (

@@ -10,6 +10,7 @@ const TextInput = ({ type, placeholder, value, onChange, required }) => {
       onChange={onChange}
       fullWidth
       required={required}
+      size="small"
     />
   );
 };

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <GlobalContextProvider>
         <body className={inter.className}>
           <Header />
-          <main style={{ padding: "5rem 2rem 0 2rem" }}>{children}</main>
+          <main style={{ padding: "6rem 2rem 0 2rem" }}>{children}</main>
         </body>
       </GlobalContextProvider>
     </html>
