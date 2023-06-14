@@ -85,7 +85,7 @@ export const GlobalContextProvider = ({ children }) => {
 
   useEffect(() => {
     getUser();
-  }, []);
+  }, [isAuthenticated]);
 
   useEffect(() => {
     console.log({ user });
