@@ -5,11 +5,11 @@ const TextInput = ({ type, placeholder, value, onChange, required }) => {
   return (
     <TextField
       type={type}
-      placeholder={placeholder}
+      label={placeholder}
       value={value}
       onChange={onChange}
       fullWidth
-      required={required}
+      // required={required}
       size="small"
     />
   );

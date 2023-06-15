@@ -40,7 +40,8 @@ const SignUp = () => {
           </Stack>
 
           <form onSubmit={handleSignUp}>
-            <Stack spacing={2}>
+            <Stack spacing={2} style={{ textAlign: "center" }}>
+              {signUpError && <ErrorText message={signUpError} />}
               <TextInput
                 type="text"
                 placeholder="Name"
@@ -62,7 +63,6 @@ const SignUp = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required={true}
               />
-              {signUpError && <ErrorText message={signUpError} />}
               <TextInput
                 type="password"
                 placeholder="Password"

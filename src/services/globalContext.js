@@ -30,7 +30,8 @@ export const GlobalContextProvider = ({ children }) => {
       console.log(error);
 
       if (error.response.status === 400) {
-        setSignUpError("Another user is already registered with this email");
+        // setSignUpError("Another user is already registered with this email");
+        setSignUpError(error.response.data.message);
       }
 
       setLoading(false);

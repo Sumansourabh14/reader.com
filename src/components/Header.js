@@ -24,7 +24,11 @@ const Header = () => {
             {isAuthenticated ? (
               <>
                 <Link href="/profile">Profile</Link>
-                <Button variant="contained" onClick={handleLogout}>
+                <Button
+                  variant="contained"
+                  onClick={handleLogout}
+                  color="error"
+                >
                   Logout
                 </Button>
               </>
