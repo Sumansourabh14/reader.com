@@ -1,10 +1,20 @@
 "use client"; // For MUI to work
 import { GlobalContext } from "@/services/globalContext";
-import { AppBar, Box, Button, Stack, Toolbar } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  IconButton,
+  Stack,
+  Toolbar,
+  Tooltip,
+} from "@mui/material";
 import Link from "next/link";
 import { useContext } from "react";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-const Header = () => {
+const Header = ({ themeMode, handleTheme }) => {
   const { isAuthenticated, logout } = useContext(GlobalContext);
 
   console.log({ isAuthenticated });
@@ -19,6 +29,17 @@ const Header = () => {
         <Toolbar>
           <h2 style={{ flexGrow: 1, color: "#000" }}>Reader.com</h2>
           <Stack direction="row" alignItems="center" spacing={3}>
+            <IconButton onClick={handleTheme}>
+              {themeMode === "light" ? (
+                <Tooltip title="Change theme to Dark mode">
+                  <LightModeIcon />
+                </Tooltip>
+              ) : (
+                <Tooltip title="Change theme to Light mode">
+                  <DarkModeIcon />
+                </Tooltip>
+              )}
+            </IconButton>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             {isAuthenticated ? (
