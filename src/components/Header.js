@@ -71,6 +71,7 @@ const Header = ({ themeMode, handleTheme }) => {
                     padding: "0.8rem 1rem",
                     backgroundColor: "#1db954",
                     borderRadius: "0.2rem",
+                    fontWeight: "600",
                   }}
                 >
                   Sign Up
