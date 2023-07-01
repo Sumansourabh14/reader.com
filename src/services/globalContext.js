@@ -5,6 +5,7 @@ import {
   loginApi,
   logoutApi,
   randomQuoteApi,
+  searchBookApi,
   signUpApi,
   userApi,
 } from "./globalApi";
@@ -106,6 +107,18 @@ export const GlobalContextProvider = ({ children, theme }) => {
     }
   };
 
+  // Google Books API
+  const searchBook = async (bookTitle) => {
+    try {
+      const data = await searchBookApi(bookTitle);
+
+      console.log(data.data.items);
+      return data.data.items;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getUser();
   }, [isAuthenticated]);
@@ -126,6 +139,7 @@ export const GlobalContextProvider = ({ children, theme }) => {
         signUpError,
         user,
         getRandomQuote,
+        searchBook,
         theme,
       }}
     >

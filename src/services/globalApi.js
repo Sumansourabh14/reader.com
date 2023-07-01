@@ -1,5 +1,10 @@
 import axios from "axios";
-import { API_URL, QUOTES_API_URL } from "../utils/config";
+import {
+  API_URL,
+  GOOGLE_BOOKS_API_KEY,
+  GOOGLE_BOOKS_API_URL,
+  QUOTES_API_URL,
+} from "../utils/config";
 
 // Consider
 // https://api.hamatim.com/quote (For book quotes)
@@ -47,6 +52,18 @@ export const userApi = async () => {
 
 export const randomQuoteApi = async () => {
   const data = await axios.get(`${QUOTES_API_URL}/random/quote`);
+
+  return data;
+};
+
+// Google Books API
+export const searchBookApi = async (bookTitle) => {
+  const data = await axios.get(`${GOOGLE_BOOKS_API_URL}/books/v1/volumes`, {
+    params: {
+      q: bookTitle,
+      key: GOOGLE_BOOKS_API_KEY,
+    },
+  });
 
   return data;
 };

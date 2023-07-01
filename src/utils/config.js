@@ -2,3 +2,5 @@
 export const API_URL = `http://localhost:7001`;
 // export const QUOTES_API_URL = `http://localhost:5001`;
 export const QUOTES_API_URL = `https://recite.onrender.com`;
+export const GOOGLE_BOOKS_API_URL = `https://www.googleapis.com`;
+export const GOOGLE_BOOKS_API_KEY = `AIzaSyACaBYRQm98oHKOXKHdDnzO_FADZSDg9B4`;

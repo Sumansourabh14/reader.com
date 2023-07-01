@@ -6,24 +6,33 @@ import {
   Button,
   IconButton,
   Stack,
+  TextField,
   Toolbar,
   Tooltip,
 } from "@mui/material";
 import Link from "next/link";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Header = ({ themeMode, handleTheme }) => {
-  const { isAuthenticated, logout, theme } = useContext(GlobalContext);
+  const { isAuthenticated, logout, searchBook, theme } =
+    useContext(GlobalContext);
 
-  console.log({ isAuthenticated });
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
+    searchBook(searchTerm);
+  };
+
+  // console.log({ isAuthenticated });
 
   const handleLogout = () => {
     logout();
   };
-
-  console.log(theme);
 
   return (
     <Box>
@@ -38,6 +47,18 @@ const Header = ({ themeMode, handleTheme }) => {
             Reader.com
           </h2>
           <Stack direction="row" alignItems="center" spacing={3}>
+            <form onSubmit={handleSearch}>
+              <TextField
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search a book"
+                size="small"
+              />
+              <IconButton type="submit">
+                <SearchIcon />
+              </IconButton>
+            </form>
             <IconButton onClick={handleTheme}>
               {themeMode === "light" ? (
                 <Tooltip title="Change theme to Dark mode">
