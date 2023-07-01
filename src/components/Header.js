@@ -1,5 +1,8 @@
 "use client"; // For MUI to work
 import { GlobalContext } from "@/services/globalContext";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   AppBar,
   Box,
@@ -12,9 +15,6 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import { useContext, useState } from "react";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import SearchIcon from "@mui/icons-material/Search";
 
 const Header = ({ themeMode, handleTheme }) => {
   const { isAuthenticated, logout, searchBook, theme } =

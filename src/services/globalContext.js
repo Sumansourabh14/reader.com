@@ -18,6 +18,7 @@ export const GlobalContextProvider = ({ children, theme }) => {
   const [loginError, setLoginError] = useState(false);
   const [signUpError, setSignUpError] = useState(null);
   const [user, setUser] = useState(null);
+  const [searchData, setSearchData] = useState(null);
 
   const router = useRouter();
 
@@ -112,7 +113,10 @@ export const GlobalContextProvider = ({ children, theme }) => {
     try {
       const data = await searchBookApi(bookTitle);
 
-      console.log(data.data.items);
+      router.push(`/search?query=${bookTitle}`);
+
+      setSearchData(data.data.items);
+
       return data.data.items;
     } catch (error) {
       console.log(error);
@@ -140,6 +144,7 @@ export const GlobalContextProvider = ({ children, theme }) => {
         user,
         getRandomQuote,
         searchBook,
+        searchData,
         theme,
       }}
     >
