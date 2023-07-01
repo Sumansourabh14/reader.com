@@ -11,7 +11,7 @@ import {
 
 export const GlobalContext = createContext();
 
-export const GlobalContextProvider = ({ children }) => {
+export const GlobalContextProvider = ({ children, theme }) => {
   const [loading, setLoading] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loginError, setLoginError] = useState(false);
@@ -126,6 +126,7 @@ export const GlobalContextProvider = ({ children }) => {
         signUpError,
         user,
         getRandomQuote,
+        theme,
       }}
     >
       {children}

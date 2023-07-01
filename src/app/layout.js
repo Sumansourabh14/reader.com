@@ -1,10 +1,10 @@
 "use client";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import { useState } from "react";
 import Header from "../components/Header";
 import { GlobalContextProvider } from "../services/globalContext";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import { useState } from "react";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
   const [themeMode, setThemeMode] = useState("light");
 
   const theme = createTheme({
-    palette: { mode: themeMode },
+    palette: {
+      mode: themeMode,
+    },
   });
 
   const handleThemeChange = () => {
@@ -28,7 +30,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <GlobalContextProvider>
+      <GlobalContextProvider theme={theme}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <body className={inter.className}>

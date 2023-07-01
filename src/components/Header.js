@@ -15,7 +15,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 const Header = ({ themeMode, handleTheme }) => {
-  const { isAuthenticated, logout } = useContext(GlobalContext);
+  const { isAuthenticated, logout, theme } = useContext(GlobalContext);
 
   console.log({ isAuthenticated });
 
@@ -23,11 +23,20 @@ const Header = ({ themeMode, handleTheme }) => {
     logout();
   };
 
+  console.log(theme);
+
   return (
     <Box>
       <AppBar position="fixed" className="app-bar-backdrop">
         <Toolbar>
-          <h2 style={{ flexGrow: 1, color: "#000" }}>Reader.com</h2>
+          <h2
+            style={{
+              flexGrow: 1,
+              color: theme.palette.mode === "light" ? "#000" : "#fff",
+            }}
+          >
+            Reader.com
+          </h2>
           <Stack direction="row" alignItems="center" spacing={3}>
             <IconButton onClick={handleTheme}>
               {themeMode === "light" ? (
