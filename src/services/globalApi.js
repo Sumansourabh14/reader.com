@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_URL } from "../utils/config";
+import { API_URL, QUOTES_API_URL } from "../utils/config";
 
 // Consider
 // https://api.hamatim.com/quote (For book quotes)
@@ -41,6 +41,12 @@ export const userApi = async () => {
     withCredentials: true,
   });
   console.log(data);
+
+  return data;
+};
+
+export const randomQuoteApi = async () => {
+  const data = await axios.get(`${QUOTES_API_URL}/random/quote`);
 
   return data;
 };

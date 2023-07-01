@@ -8,7 +8,8 @@ import { useContext, useState } from "react";
 import TextInput from "../../components/formComponents/TextInput";
 
 export const metadata = {
-  title: "Login",
+  title: "Login | Reader.com",
+  description: "Login page",
 };
 
 const Login = () => {

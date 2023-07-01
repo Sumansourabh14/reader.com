@@ -1,7 +1,13 @@
 "use client"; // to use useState and other hooks
 import { useRouter } from "next/navigation";
 import { createContext, useEffect, useState } from "react";
-import { loginApi, logoutApi, signUpApi, userApi } from "./globalApi";
+import {
+  loginApi,
+  logoutApi,
+  randomQuoteApi,
+  signUpApi,
+  userApi,
+} from "./globalApi";
 
 export const GlobalContext = createContext();
 
@@ -91,6 +97,15 @@ export const GlobalContextProvider = ({ children }) => {
     }
   };
 
+  const getRandomQuote = async () => {
+    try {
+      const data = await randomQuoteApi();
+      return data.data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getUser();
   }, [isAuthenticated]);
@@ -110,6 +125,7 @@ export const GlobalContextProvider = ({ children }) => {
         signUp,
         signUpError,
         user,
+        getRandomQuote,
       }}
     >
       {children}
