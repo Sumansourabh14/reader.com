@@ -68,6 +68,19 @@ export const searchBookApi = async (bookTitle) => {
   return data;
 };
 
+export const bookDetailsApi = async (volumeId) => {
+  const data = await axios.get(
+    `${GOOGLE_BOOKS_API_URL}/books/v1/volumes/${volumeId}`,
+    {
+      params: {
+        key: GOOGLE_BOOKS_API_KEY,
+      },
+    }
+  );
+
+  return data;
+};
+
 // // Fetch word meaning from https://dictionaryapi.dev/
 // export const getWord = async (word) => {
 //   const data = await axios.get(

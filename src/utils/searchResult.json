@@ -1,0 +1,776 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 4160,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "giaLDgAAQBAJ",
+      "etag": "z8Ol5sPJC7M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/giaLDgAAQBAJ",
+      "volumeInfo": {
+        "title": "All the Light We Cannot See",
+        "subtitle": "A Novel",
+        "authors": ["Anthony Doerr"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2017-04-04",
+        "description": "Winner of the Pulitzer Prize, a New York Times Book Review Top Ten Book, National Book Award finalist, more than two and a half years on the New York Times bestseller list From the highly acclaimed, multiple award-winning Anthony Doerr, the stunningly beautiful instant New York Times bestseller about a blind French girl and a German boy whose paths collide in occupied France as both try to survive the devastation of World War II. Marie-Laure lives in Paris near the Museum of Natural History, where her father works. When she is twelve, the Nazis occupy Paris and father and daughter flee to the walled citadel of Saint-Malo, where Marie-Laure's reclusive great uncle lives in a tall house by the sea. With them they carry what might be the museum's most valuable and dangerous jewel. In a mining town in Germany, Werner Pfennig, an orphan, grows up with his younger sister, enchanted by a crude radio they find that brings them news and stories from places they have never seen or imagined. Werner becomes an expert at building and fixing these crucial new instruments and is enlisted to use his talent to track down the resistance. Deftly interweaving the lives of Marie-Laure and Werner, Doerr illuminates the ways, against all odds, people try to be good to one another. Doerr's \"stunning sense of physical detail and gorgeous metaphors\" (San Francisco Chronicle) are dazzling. Ten years in the writing, a National Book Award finalist, All the Light We Cannot See is a magnificent, deeply moving novel from a writer \"whose sentences never fail to thrill\" (Los Angeles Times).",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781501173219"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1501173219"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 560,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 3597,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.6.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=giaLDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=giaLDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=giaLDgAAQBAJ&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=giaLDgAAQBAJ&dq=all+the+light+we+cannot+see&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/All_the_Light_We_Cannot_See.html?hl=&id=giaLDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=giaLDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Ten years in the writing, a National Book Award finalist, All the Light We Cannot See is a magnificent, deeply moving novel from a writer &quot;whose sentences never fail to thrill&quot; (Los Angeles Times)."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "A2ZErgEACAAJ",
+      "etag": "XUakJbPemfI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/A2ZErgEACAAJ",
+      "volumeInfo": {
+        "title": "All the Light We Cannot See",
+        "authors": ["Anthony Doerr"],
+        "publisher": "Fourth Estate",
+        "publishedDate": "2015-04-23",
+        "description": "Marie-Laure has been blind since the age of six. Her father builds a perfect miniature of their Paris neighbourhood so she can memorize it by touch and navigate her way home. But when the Nazis invade, father and daughter flee with a dangerous secret. Werner is a German orphan, destined to labour in the same mine that claimed his father's life, until he discovers a knack for engineering. His talent wins him a place at a brutal military academy, but his way out of obscurity is built on suffering. At the same time, far away in a walled city by the sea, an old man discovers new worlds without ever setting foot outside his home. But all around him, impending danger closes in. Doerr's combination of soaring imagination and meticulous observation is electric.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0008138303"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780008138301"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 544,
+        "printType": "BOOK",
+        "averageRating": 4,
+        "ratingsCount": 3594,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=A2ZErgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=A2ZErgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=A2ZErgEACAAJ&dq=all+the+light+we+cannot+see&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=A2ZErgEACAAJ&dq=all+the+light+we+cannot+see&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/All_the_Light_We_Cannot_See.html?hl=&id=A2ZErgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=A2ZErgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In this magnificent, deeply moving novel, the stories ofMarie-Laure and Werner illuminate the ways, against all odds, people try to be good to one another."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "bigUiC--lJYC",
+      "etag": "n+lsF98M5Dk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/bigUiC--lJYC",
+      "volumeInfo": {
+        "title": "Four Seasons in Rome",
+        "subtitle": "On Twins, Insomnia, and the Biggest Funeral in the History of the World",
+        "authors": ["Anthony Doerr"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2008-06-10",
+        "description": "Documents the award-winning writer's experiences of living, working, and raising twin sons in Rome during the year following his receipt of a prestigious Rome Prize stipend, a period during which he attended the vigil of the dying John Paul II, brought his children on a snowy visit to the Pantheon, and befriended numerous locals. Reprint. 35,000 first printing.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781416573166"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "141657316X"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 240,
+        "printType": "BOOK",
+        "categories": ["Biography & Autobiography"],
+        "averageRating": 3.5,
+        "ratingsCount": 20,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.5.4.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=bigUiC--lJYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=bigUiC--lJYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=bigUiC--lJYC&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=bigUiC--lJYC&dq=all+the+light+we+cannot+see&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Four_Seasons_in_Rome.html?hl=&id=bigUiC--lJYC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=bigUiC--lJYC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The author describes the year he spent in Rome after winning the Rome Prize, including his adventures around the city, life in a foreign but welcoming country, and parenthood as it applies to his newborn twins."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "zEYwJZPwCqIC",
+      "etag": "EXeAcFR/eK4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/zEYwJZPwCqIC",
+      "volumeInfo": {
+        "title": "Deafening",
+        "authors": ["Frances Itani"],
+        "publisher": "Open Road + Grove/Atlantic",
+        "publishedDate": "2007-12-01",
+        "description": "The internationally bestselling, “gorgeously moving, old-fashioned novel” about a woman’s life, loves, and self-discovery on the eve the Great War (O, The Oprah Magazine). Grania O’Neill, the daughter of hardworking Irish hoteliers in small-town Ontario, is five years old when she emerges from a bout of scarlet fever profoundly deaf—suddenly sealed off from the world that was just beginning to open for her. While her guilt-plagued mother cannot accept it, Grania finds allies in her grandmother and her older sister, Tress. It isn’t until she’s enrolled in the Ontario School for the Deaf in Belleville, that Grania truly begins to thrive. In time, she falls for Jim Lloyd, a hearing man with whom Grania creates a new emotional vocabulary that encompasses both sound and silence. But just two weeks after their wedding, Jim leaves to serve as a stretcher bearer on the blood-soaked battlefields of Flanders. During this long war of attrition, Jim and Grania’s letters back and forth—both real and imagined—attempt to sustain their young love in a world as brutal as it is hopeful. Winner of the Commonwealth Book Prize, Frances Itani’s debut novel is a “brilliantly lucid and masterfully sustained” ode to language—how it can console, imprison, and liberate—with “the integrity of an achieved artistic vision, the kind of power that is generally associated with the gracious, crystalline prose of Grace Paley, the flagrantly good, good lines of Robert Lowell and W. H. Auden’s poetry” (Kaye Gibbons, author of A Virtuous Woman).",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781555846541"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1555846548"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 458,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 3.5,
+        "ratingsCount": 13,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "5.11.9.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=zEYwJZPwCqIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=zEYwJZPwCqIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=zEYwJZPwCqIC&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=zEYwJZPwCqIC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=zEYwJZPwCqIC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 391.76,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 274.23,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=zEYwJZPwCqIC&rdid=book-zEYwJZPwCqIC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 391760000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 274230000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Deafening-sample-epub.acsm?id=zEYwJZPwCqIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Deafening-sample-pdf.acsm?id=zEYwJZPwCqIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=zEYwJZPwCqIC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Winner of the Commonwealth Book Prize, Frances Itani’s debut novel is a “brilliantly lucid and masterfully sustained” ode to language—how it can console, imprison, and liberate—with “the integrity of an achieved artistic vision, ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Y4tiDgAAQBAJ",
+      "etag": "BRlmnU3lzU0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Y4tiDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Summary and Analysis of All the Light We Cannot See",
+        "subtitle": "Based on the Book by Anthony Doerr",
+        "authors": ["Worth Books"],
+        "publisher": "Open Road Media",
+        "publishedDate": "2017-03-21",
+        "description": "So much to read, so little time? This brief overview of All the Light We Cannot See tells you what you need to know—before or after you read Anthony Doerr’s book. Crafted and edited with care, Worth Books set the standard for quality and give you the tools you need to be a well-informed reader. This short summary and analysis of All the Light We Cannot See includes: Historical context Chapter-by-chapter overviews Profiles of the main characters Themes and symbols Important quotes Fascinating trivia Glossary of terms Supporting material to enhance your understanding of the original work About All the Light We Cannot See by Anthony Doerr: Anthony Doerr’s Pulitzer Prize–winning novel is a beautifully crafted story about the intersection of two very different lives: A German boy with a knack for radios and a blind girl in occupied France are somehow united as Europe is plunges into World War II. An ambitious and symbolic tale spanning eighty years, All The Light We Cannot See illiminates how goodness and hope can be found even in the darkest of times. The summary and analysis in this ebook are intended to complement your reading experience and bring you closer to a great work of fiction.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781504044813"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1504044819"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 62,
+        "printType": "BOOK",
+        "categories": ["Literary Criticism"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.6.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Y4tiDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Y4tiDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=Y4tiDgAAQBAJ&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Y4tiDgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Y4tiDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 110.92,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 110.92,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=Y4tiDgAAQBAJ&rdid=book-Y4tiDgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 110920000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 110920000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Summary_and_Analysis_of_All_the_Light_We-sample-epub.acsm?id=Y4tiDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Summary_and_Analysis_of_All_the_Light_We-sample-pdf.acsm?id=Y4tiDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Y4tiDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This short summary and analysis of All the Light We Cannot See includes: Historical context Chapter-by-chapter overviews Profiles of the main characters Themes and symbols Important quotes Fascinating trivia Glossary of terms Supporting ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "S8haB0NW7LcC",
+      "etag": "XCHZShQ7+9w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/S8haB0NW7LcC",
+      "volumeInfo": {
+        "title": "Memory Wall",
+        "authors": ["Anthony Doerr"],
+        "publisher": "HarperCollins UK",
+        "publishedDate": "2011-01-06",
+        "description": "Set on four continents, Anthony Doerr's collection of stories is about memory: the source of meaning and coherence in our lives, the fragile thread that connects us to ourselves and to others.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780007367740"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0007367740"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 272,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 4,
+        "ratingsCount": 14,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.7.2.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=S8haB0NW7LcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=S8haB0NW7LcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=S8haB0NW7LcC&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=S8haB0NW7LcC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=S8haB0NW7LcC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 476.71,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 333.7,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=S8haB0NW7LcC&rdid=book-S8haB0NW7LcC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 476710000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 333700000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Memory_Wall-sample-epub.acsm?id=S8haB0NW7LcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=S8haB0NW7LcC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Set on four continents, Anthony Doerr&#39;s collection of stories is about memory: the source of meaning and coherence in our lives, the fragile thread that connects us to ourselves and to others."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "29sCwgEACAAJ",
+      "etag": "KXTGPmiTf6g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/29sCwgEACAAJ",
+      "volumeInfo": {
+        "title": "All the Light We Cannot See",
+        "subtitle": "A Novel by Anthony Doerr",
+        "publishedDate": "2016",
+        "description": "All the Light We Cannot See by Anthony Doerr Conversation StartersA Brief Look Inside:All the Light We Cannot See, the second novel from Anthony Doerr, takes place during World War II. It tells the story of a young, blind girl living in Paris with her father. The pair must escape as the War nears Paris, but not without taking the precious, and highly sought after, Sea of Flames. Marie-Laure and her father travel to Saint-Malo to live with Uncle Etienne and Madame Manec. On the other side of the story, Werner Pfennig is a young boy growing up in Germany. He takes a special interest in electronics and radios. He becomes so skilled that he gains the attention of the Nazis and enters their training program. He eventually arrives in Saint-Malo and must make a decision that will change the life of Marie-Laure. All the Light We Cannot See gained worldwide attention when it won the Pulitzer Prize for Fiction in 2015 and was a finalist for the National Book Award in 2014. EVERY GOOD BOOK CONTAINS A WORLD FAR DEEPER than the surface of its pages. The characters and their world come alive, and the characters and its world still live on. Conversation Starters is peppered with questions designed to bring us beneath the surface of the page and invite us into the world that lives on. These questions can be used to.. Create Hours of Conversation:• Foster a deeper understanding of the book • Promote an atmosphere of discussion for groups • Assist in the study of the book, either individually or corporately • Explore unseen realms of the book as never seen before Disclaimer: This book you are about to enjoy is an independent resource to supplement the original book, enhancing your experience of All the Light We Cannot See. If you have not yet purchased a copy of the original book, please do before purchasing this unofficial Conversation Starters.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1524216607"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781524216603"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "averageRating": 4,
+        "ratingsCount": 3594,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=29sCwgEACAAJ&dq=all+the+light+we+cannot+see&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=29sCwgEACAAJ&dq=all+the+light+we+cannot+see&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/All_the_Light_We_Cannot_See.html?hl=&id=29sCwgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=29sCwgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "All the Light We Cannot See by Anthony Doerr Conversation StartersA Brief Look Inside:All the Light We Cannot See, the second novel from Anthony Doerr, takes place during World War II. It tells the story of a young, blind girl living in ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "2kQ9AwAAQBAJ",
+      "etag": "0nJUYA8Bing",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/2kQ9AwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Shell Collector",
+        "subtitle": "Stories",
+        "authors": ["Anthony Doerr"],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2011-01-04",
+        "description": "Explores the variety of the human condition in a collection of short stories about love, relationships, grief, and hardship.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781439190050"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1439190054"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": ["Fiction"],
+        "averageRating": 3.5,
+        "ratingsCount": 17,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=2kQ9AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=2kQ9AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=2kQ9AwAAQBAJ&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=2kQ9AwAAQBAJ&dq=all+the+light+we+cannot+see&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Shell_Collector.html?hl=&id=2kQ9AwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=2kQ9AwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In this astonishingly assured, exquisitely crafted debut collection, Anthony Doerr takes readers from the African coast to the suburbs of Ohio, from sideshow pageantry to harsh wilderness survival, charting a vast and varied emotional ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "NAnzDAAAQBAJ",
+      "etag": "J8Zwxj/IQyw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NAnzDAAAQBAJ",
+      "volumeInfo": {
+        "title": "All the Light We Cannot See: A Novel by Anthony Doerr | Conversation Starters",
+        "authors": ["dailyBooks"],
+        "publishedDate": "2016-09-01",
+        "description": "All the Light We Cannot See: by Anthony Doerr | Conversation Starters A Brief Look Inside: All the Light We Cannot See, the second novel from Anthony Doerr, takes place during World War II. It tells the story of a young, blind girl living in Paris with her father. The pair must escape as the War nears Paris, but not without taking the precious, and highly sought after, Sea of Flames. Marie-Laure and her father travel to Saint-Malo to live with Uncle Etienne and Madame Manec.On the other side of the story, Werner Pfennig is a young boy growing up in Germany. He takes a special interest in electronics and radios. He becomes so skilled that he gains the attention of the Nazis and enters their training program. He eventually arrives in Saint-Malo and must make a decision that will change the life of Marie-Laure. EVERY GOOD BOOK CONTAINS A WORLD FAR DEEPER than the surface of its pages. The characters and their world come alive, and the characters and its world still live on. Conversation Starters is peppered with questions designed to bring us beneath the surface of the page and invite us into the world that lives on. These questions can be used to... Create Hours of Conversation: • Foster a deeper understanding of the book • Promote an atmosphere of discussion for groups • Assist in the study of the book, either individually or corporately • Explore unseen realms of the book as never seen before Disclaimer: This book you are about to enjoy is an independent resource to supplement the original book, enhancing your experience of All the Light We Cannot See. If you have not yet purchased a copy of the original book, please do before purchasing this unofficial Conversation Starters.",
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 108,
+        "printType": "BOOK",
+        "categories": ["Study Aids"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NAnzDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NAnzDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=NAnzDAAAQBAJ&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=NAnzDAAAQBAJ&dq=all+the+light+we+cannot+see&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/All_the_Light_We_Cannot_See_A_Novel_by_A.html?hl=&id=NAnzDAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/All_the_Light_We_Cannot_See_A_Novel_by_A-sample-epub.acsm?id=NAnzDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/All_the_Light_We_Cannot_See_A_Novel_by_A-sample-pdf.acsm?id=NAnzDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=NAnzDAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "All the Light We Cannot See: by Anthony Doerr | Conversation Starters A Brief Look Inside: All the Light We Cannot See, the second novel from Anthony Doerr, takes place during World War II. It tells the story of a young, blind girl living ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "J4tlDwAAQBAJ",
+      "etag": "sQ1gRLn2pfo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/J4tlDwAAQBAJ",
+      "volumeInfo": {
+        "title": "All the Light We Cannot See: by Anthony Doerr | Summary & Analysis",
+        "authors": ["Elite Summaries"],
+        "publisher": "Elite Summaries",
+        "description": "Detailed summary and analysis of All the Light We Cannot See.",
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "printType": "BOOK",
+        "categories": ["Literary Collections"],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=J4tlDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=J4tlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=J4tlDwAAQBAJ&printsec=frontcover&dq=all+the+light+we+cannot+see&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=J4tlDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=J4tlDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 289.47,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 202.63,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=J4tlDwAAQBAJ&rdid=book-J4tlDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 289470000,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 202630000,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/All_the_Light_We_Cannot_See_by_Anthony_D-sample-epub.acsm?id=J4tlDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/All_the_Light_We_Cannot_See_by_Anthony_D-sample-pdf.acsm?id=J4tlDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=J4tlDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Detailed summary and analysis of All the Light We Cannot See."
+      }
+    }
+  ]
+}

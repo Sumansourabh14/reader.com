@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { createContext, useEffect, useState } from "react";
 import {
+  bookDetailsApi,
   loginApi,
   logoutApi,
   randomQuoteApi,
@@ -123,6 +124,18 @@ export const GlobalContextProvider = ({ children, theme }) => {
     }
   };
 
+  const getBookDetails = async (volumeId) => {
+    try {
+      const data = await bookDetailsApi(volumeId);
+
+      // router.push(`/search?query=${bookTitle}`);
+
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getUser();
   }, [isAuthenticated]);
@@ -145,6 +158,7 @@ export const GlobalContextProvider = ({ children, theme }) => {
         getRandomQuote,
         searchBook,
         searchData,
+        getBookDetails,
         theme,
       }}
     >
