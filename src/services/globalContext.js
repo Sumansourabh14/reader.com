@@ -130,7 +130,7 @@ export const GlobalContextProvider = ({ children, theme }) => {
 
       // router.push(`/search?query=${bookTitle}`);
 
-      return data;
+      return data.data;
     } catch (error) {
       console.log(error);
     }

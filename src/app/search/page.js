@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useContext, useEffect } from "react";
 import searchResult from "../../utils/searchResult.json";
+import Link from "next/link";
 
 const Search = () => {
   const { searchData } = useContext(GlobalContext);
@@ -36,7 +37,9 @@ const Search = () => {
                   />
                 )}
                 <div>
-                  <h3>{item.volumeInfo.title}</h3>
+                  <Link href={`/book/${item.id}`}>
+                    <h3>{item.volumeInfo.title}</h3>
+                  </Link>
                   {item.volumeInfo.authors && (
                     <p>By {item.volumeInfo.authors[0]}</p>
                   )}
