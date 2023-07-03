@@ -35,7 +35,7 @@ const BookDetails = ({ params }) => {
       {bookData && (
         <Stack spacing={8} sx={{ marginBottom: "1rem" }}>
           <div key={bookData.id}>
-            <Stack direction="row" spacing={4}>
+            <Stack direction="row" spacing={6}>
               {bookData.volumeInfo.imageLinks && (
                 <Image
                   src={`${
@@ -50,7 +50,9 @@ const BookDetails = ({ params }) => {
               <Stack spacing={2}>
                 <h1>{bookData.volumeInfo.title}</h1>
                 {bookData.volumeInfo?.subtitle && (
-                  <h3>{bookData.volumeInfo.subtitle}</h3>
+                  <h3 style={{ fontWeight: "400" }}>
+                    {bookData.volumeInfo.subtitle}
+                  </h3>
                 )}
 
                 <Grid container gap={1} spacing={2}>
@@ -78,7 +80,7 @@ const BookDetails = ({ params }) => {
                   />
                 </Grid>
 
-                <Stack direction="row" spacing={1}>
+                <Stack direction="row" gap={1} flexWrap="wrap">
                   {bookData.volumeInfo.categories &&
                     bookData.volumeInfo.categories.map((item) => (
                       <p

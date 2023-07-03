@@ -70,8 +70,8 @@ const Header = ({ themeMode, handleTheme }) => {
                 </Tooltip>
               )}
             </IconButton>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
+            <Link href="/browse">Browse</Link>
+            {/* <Link href="/about">About</Link> */}
             {isAuthenticated ? (
               <>
                 <Link href="/profile">Profile</Link>

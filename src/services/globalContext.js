@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { createContext, useEffect, useState } from "react";
 import {
   bookDetailsApi,
+  fetchByGenreApi,
   loginApi,
   logoutApi,
   randomQuoteApi,
@@ -124,6 +125,16 @@ export const GlobalContextProvider = ({ children, theme }) => {
     }
   };
 
+  const getBooksByGenre = async (genreTitle) => {
+    try {
+      const data = await fetchByGenreApi(genreTitle);
+
+      return data.data.items;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const getBookDetails = async (volumeId) => {
     try {
       const data = await bookDetailsApi(volumeId);
@@ -159,6 +170,7 @@ export const GlobalContextProvider = ({ children, theme }) => {
         searchBook,
         searchData,
         getBookDetails,
+        getBooksByGenre,
         theme,
       }}
     >
