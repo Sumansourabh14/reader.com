@@ -85,6 +85,7 @@ export const fetchByGenreApi = async (genreTitle) => {
   const data = await axios.get(`${GOOGLE_BOOKS_API_URL}/books/v1/volumes`, {
     params: {
       q: `subject:${genreTitle}`,
+      maxResults: 20,
       key: GOOGLE_BOOKS_API_KEY,
     },
   });

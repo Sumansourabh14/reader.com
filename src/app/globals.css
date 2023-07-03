@@ -29,6 +29,20 @@ a {
   backdrop-filter: blur(10px);
 }
 
+.react-horizontal-scrolling-menu--scroll-container {
+  gap: 0.5rem;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  opacity: 1;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar but functionality will remain */
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
 /* Loading Button Circle - START */
 @keyframes rotate {
   from {
