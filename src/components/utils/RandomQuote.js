@@ -34,10 +34,12 @@ const RandomQuote = () => {
       {randomQuote && (
         <Stack spacing={2} alignItems="center">
           <FormatQuoteIcon sx={{ fontSize: 100 }} />
-          <blockquote style={{ textAlign: "center" }}>
+          <blockquote
+            style={{ textAlign: "center", fontWeight: "300", fontSize: "2rem" }}
+          >
             {randomQuote?.quote}
           </blockquote>
-          <p>- {randomQuote?.author}</p>
+          <p style={{ fontWeight: "600" }}>- {randomQuote?.author}</p>
           <p>{randomQuote?.book}</p>
         </Stack>
       )}

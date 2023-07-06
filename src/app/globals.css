@@ -29,6 +29,11 @@ a {
   backdrop-filter: blur(10px);
 }
 
+.scale-book-card {
+  scale: 1.2;
+  transition: 0.5s ease-in-out;
+}
+
 .react-horizontal-scrolling-menu--scroll-container {
   gap: 0.5rem;
   padding-bottom: 10px;

@@ -62,11 +62,15 @@ const Header = ({ themeMode, handleTheme }) => {
             <IconButton onClick={handleTheme}>
               {themeMode === "light" ? (
                 <Tooltip title="Change theme to Dark mode">
-                  <LightModeIcon />
+                  <div>
+                    <LightModeIcon />
+                  </div>
                 </Tooltip>
               ) : (
                 <Tooltip title="Change theme to Light mode">
-                  <DarkModeIcon />
+                  <div>
+                    <DarkModeIcon />
+                  </div>
                 </Tooltip>
               )}
             </IconButton>

@@ -28,7 +28,14 @@ const SignUp = () => {
 
   return (
     <div>
-      <Stack direction="row" justifyContent="center" spacing={10}>
+      <Stack
+        direction={{
+          xs: "column",
+          sm: "row",
+        }}
+        justifyContent="center"
+        spacing={10}
+      >
         <div>
           <Stack
             alignItems="center"
@@ -96,6 +103,8 @@ const SignUp = () => {
             }
             alt="Books"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
             style={{ borderRadius: "0.2rem" }}
           />
         </div>

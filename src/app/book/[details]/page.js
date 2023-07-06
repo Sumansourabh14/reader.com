@@ -30,6 +30,10 @@ const BookDetails = ({ params }) => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log(bookData);
+  }, [bookData]);
+
   return (
     <Container>
       {bookData && (
